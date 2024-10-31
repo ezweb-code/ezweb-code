@@ -3,9 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EZWEB Code</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>EZWeb Code</title>
 </head>
 <body>
-    <h1>Hello Type</h1>
+    <header class="header">
+        <div class="navbar">
+            <div class="logo"><h1> EZWEB Code</h1></div>
+        <nav class="nav">
+            <ul><li><a href="#home">Home</a></li></ul>
+            <ul><li><a href="#about-me">About Me</a></li></ul>
+            <ul><li><a href="#my-skill">My Skill</a></li></ul>
+            <ul><li><a href="#portfolio">Portfolio</a></li></ul>
+        </nav>
+        <div class="btn-contact ">
+            <a href="#contact-me">Contact Me</a>
+        </div>
+        </div>
+    </header>
+    <main>
+        <section id="home" class="space-y">
+            <div class="container">
+                <div class="content">
+                    <div class="title">
+                        <h1>EZWEB code</h1>
+                    </div>
+                    <div class="description">
+                        <p>we believe that everyone can learn to design and develop stunning websites. Whether you’re a beginner or an experienced coder, our resources are designed to help you navigate the world of web design and development with ease.
+    
+                            Explore our tutorials, download free templates, and join our community of aspiring web designers and developers. Dive into the world of creativity and coding with us!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about-me" class="space-y">
+            <h2>About Me</h2>
+            <p>I'm a web developer, specializing in HTML, CSS, and JavaScript.</p>
+        </section>
+        <section id="my-skill">
+            <h2>My Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+        <section id="portfolio" class="space-y">
+            <h2>Portfolio</h2>
+            <div class="gallery">
+                <img src="image1.jpg" alt="Image 1">
+                <img src="image2.jpg" alt="Image 2">
+                <img src="image3.jpg" alt="Image 3">
+            </div>
+        </section>
+        <section id="contact-me" class="space-y">
+            <h2>Contact Me</h2>
+            <form action="submit.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>

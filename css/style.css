@@ -1,0 +1,52 @@
+/* Globale Style */
+body{
+    background-color: black;
+    color: #9b9b9b;
+}
+.space-y{
+    padding: 10% 0;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+/* Header */
+.header{
+    position: fixed ;
+    top: 0;
+    left: 0;
+    width: 100%;
+  
+}
+.navbar{
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .nav{
+    display: flex;
+}
+.header .nav ul{
+    margin: 0;
+    padding: 0;
+}
+.header .nav ul li{
+    list-style-type: none;
+    padding: 1rem;
+   
+}
+.header .nav a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Home Section */
+#home .content{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+#home .content h1{
+    font-size: 3rem;
+}
