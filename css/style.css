@@ -1,52 +1,148 @@
 /* Globale Style */
-body{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body {
     background-color: black;
     color: #9b9b9b;
+    font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
-.space-y{
-    padding: 10% 0;
+
+.space-y {
+    padding: 7% 0;
 }
-.container{
+
+.container {
     width: 90%;
     margin: 0 auto;
 }
+
+.btn a {
+    color: #000;
+    padding: .5rem 1rem;
+    background-color: #fff;
+    border-radius: .2rem;
+    text-decoration: none;
+}
+
 /* Header */
-.header{
-    position: fixed ;
+.header {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-  
+    backdrop-filter: blur(20px);
+    background-color: #0d111799;
 }
-.navbar{
+
+.navbar {
     padding: .5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.header .nav{
+
+.header .nav {
     display: flex;
 }
-.header .nav ul{
+
+.header .nav ul {
     margin: 0;
     padding: 0;
 }
-.header .nav ul li{
+
+.header .nav ul li {
     list-style-type: none;
     padding: 1rem;
-   
+
 }
-.header .nav a{
+
+.header .nav a {
     text-decoration: none;
     color: #fff;
 }
 
 /* Home Section */
-#home .content{
+#home .content {
     width: 60%;
     margin: auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
 }
-#home .content h1{
-    font-size: 3rem;
+
+#home .content h1 {
+    color: #fff;
+    font-size: 4.5rem;
+    margin: 0;
+}
+
+.description p {
+    font-size: 1.2rem;
+}
+
+.btn-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.btn-learn a {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    margin-left: 1rem
+}
+
+/* About Section */
+#about-me {
+    background-color: #161b22;
+}
+#about-me .content{
+    display: flex;
+    width: 100%;
+}
+#about-me .image{
+   width: 40%;
+}
+#about-me .about-content{
+    width: 60%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about-me .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#about-me h2 {
+    font-size: 4rem;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+#my-skill .head-content{
+width: 50%;
+margin: 0 auto;
+text-align: center;
+display: flex;
+ flex-direction: column;
+}
+#my-skill .header-title {
+    border: 1px solid #fff;
+    padding: .3rem;
+    border-radius: 20px;
+    width: 70px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+#my-skill h1{
+    margin: 0;
+    font-size: 4rem;
+    color: #fff;
 }
