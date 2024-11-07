@@ -1,11 +1,12 @@
 /* Globale Style */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 body {
     background-color: black;
     color: #9b9b9b;
     font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .space-y {
@@ -15,6 +16,12 @@ body {
 .container {
     width: 90%;
     margin: 0 auto;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .btn a {
@@ -99,14 +106,17 @@ body {
 #about-me {
     background-color: #161b22;
 }
-#about-me .content{
+
+#about-me .content {
     display: flex;
     width: 100%;
 }
-#about-me .image{
-   width: 40%;
+
+#about-me .image {
+    width: 40%;
 }
-#about-me .about-content{
+
+#about-me .about-content {
     width: 60%;
     padding: 3rem;
     display: flex;
@@ -114,11 +124,7 @@ body {
     justify-content: center;
 }
 
-#about-me .image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+
 
 #about-me h2 {
     font-size: 4rem;
@@ -126,23 +132,96 @@ body {
     text-align: center;
     margin: 0;
 }
-#my-skill .head-content{
-width: 50%;
-margin: 0 auto;
-text-align: center;
-display: flex;
- flex-direction: column;
+
+#my-skill .head-content {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
+
 #my-skill .header-title {
     border: 1px solid #fff;
     padding: .3rem;
     border-radius: 20px;
     width: 70px;
     margin: 0 auto;
+    color: black;
     background-color: #fff;
 }
-#my-skill h1{
+
+#my-skill h1 {
     margin: 0;
     font-size: 4rem;
     color: #fff;
+}
+
+#my-skill .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+
+}
+
+#my-skill .skill-list .item {
+    flex: 1 1 calc(20% - 10px);
+    /* 5 columns */
+    max-width: calc(20% - 10px);
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+
+}
+
+#portfolio {
+    background-color: #1e1e20;
+}
+
+#portfolio h1 {
+    margin: 0;
+    font-size: 4rem;
+    color: #fff;
+}
+
+#portfolio .head-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head-title .short-des {
+    font-size: 1.5rem;
+    width: 50%;
+    text-align: left;
+}
+
+#portfolio .project-list {
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+}
+#portfolio .project-list .project{
+    flex: 1 1 calc(33.33% - 10px);
+    /* 5 columns */
+    max-width: calc(33.33% - 10px);
+   
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    position: relative; 
+
+}
+.project-list .project .title{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    color:  #fff;
 }
